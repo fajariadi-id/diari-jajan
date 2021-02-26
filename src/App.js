@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { getItems } from './actions';
+import Header from './components/Header/Header';
+import Modal from './components/Modal/Modal';
 import Receipts from './components/Receipts/Receipts';
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
 
   return (
     <div>
+      <Header />
+      <Modal />
       <Receipts />
     </div>
   );

@@ -16,7 +16,7 @@ const BtnComponent = styled.button`
   cursor: pointer;
   background-color: ${({ color }) => color};
   color: white;
-  border-radius: 5px;
+  border-radius: 3px;
 `;
 
 export default Button;
