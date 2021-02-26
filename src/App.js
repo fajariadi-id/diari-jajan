@@ -20,11 +20,11 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <>
       <Header />
       <Modal />
       <Receipts />
-    </div>
+    </>
   );
 };
 

@@ -18,9 +18,9 @@ const Modal = () => {
   const receipt = useSelector((state) => state.receipt);
   const modal = useSelector((state) => state.modal);
   const dispatch = useDispatch();
-  const id = receipt.length;
-  const created_at = getItemCreated();
+
   const cost = +price;
+  const created_at = getItemCreated();
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -35,7 +35,7 @@ const Modal = () => {
     if (!name) return alert('masukkan nama');
     if (!price) return alert('masukkan harga');
 
-    addItems(id, name, cost, created_at);
+    dispatch(addItems(name, cost, created_at));
 
     setName('');
     setPrice('');

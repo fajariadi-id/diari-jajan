@@ -4,7 +4,15 @@ const receiptReducer = (state = [], action) => {
       return [...state, ...action.payload];
 
     case 'add_items':
-      return [...state, action.payload];
+      return [
+        ...state,
+        {
+          id: +1,
+          name: action.payload.name,
+          cost: action.payload.cost,
+          created_at: action.payload.created_at,
+        },
+      ];
 
     default:
       return state;
