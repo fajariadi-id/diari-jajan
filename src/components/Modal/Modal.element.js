@@ -13,7 +13,7 @@ export const ModalOverlay = styled.div`
   visibility: ${({ modal }) => (modal ? 'visible' : 'hidden')};
 `;
 
-export const ModalContainer = styled.div`
+export const ModalContainer = styled.form`
   background-color: white;
   padding: 20px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
