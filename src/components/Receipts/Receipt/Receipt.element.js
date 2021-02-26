@@ -26,6 +26,10 @@ export const List = styled.li`
   & > span:nth-child(2) {
     flex: 1;
   }
+
+  & > span {
+    text-transform: capitalize;
+  }
 `;
 
 export const ReceiptTotal = styled.div`
