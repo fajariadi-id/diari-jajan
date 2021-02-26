@@ -8,7 +8,7 @@ import {
   ModalOverlay,
 } from './Modal.element';
 import { useSelector, useDispatch } from 'react-redux';
-import { closeModal, addItems } from '../../actions';
+import { addItems, closeModal } from '../../actions';
 import { getItemCreated } from '../../functions';
 
 const Modal = () => {
@@ -18,7 +18,9 @@ const Modal = () => {
   const receipt = useSelector((state) => state.receipt);
   const modal = useSelector((state) => state.modal);
   const dispatch = useDispatch();
-  const prevId = receipt.length;
+  const id = receipt.length;
+  const created_at = getItemCreated();
+  const cost = +price;
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -33,7 +35,7 @@ const Modal = () => {
     if (!name) return alert('masukkan nama');
     if (!price) return alert('masukkan harga');
 
-    dispatch(addItems(prevId, name, price, getItemCreated()));
+    addItems(id, name, cost, created_at);
 
     setName('');
     setPrice('');
