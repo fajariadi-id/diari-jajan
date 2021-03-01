@@ -1,3 +1,5 @@
+import { months } from '../constant';
+
 const getItemCreated = () => {
   const time = new Date();
   const year = time.getFullYear();
@@ -7,11 +9,14 @@ const getItemCreated = () => {
   const min = time.getMinutes();
   const sec = time.getSeconds();
 
+  const monthFormat = month < 10 ? `0${month}` : month;
+  const dateFormat = date < 10 ? `0${date}` : date;
+
   const hourFormat = hour < 10 ? `0${hour}` : hour;
   const minFormat = min < 10 ? `0${min}` : min;
   const secFormat = sec < 10 ? `0${sec}` : sec;
 
-  return `${year}-${month}-${date} ${hourFormat}:${minFormat}:${secFormat}`;
+  return `${year}-${monthFormat}-${dateFormat} ${hourFormat}:${minFormat}:${secFormat}`;
 };
 
 export default getItemCreated;
