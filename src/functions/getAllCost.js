@@ -1,5 +1,12 @@
+import { getItemCreated } from '../functions';
+
 const getAllCost = (receipt) => {
-  const sumAllCost = receipt
+  const month = getItemCreated().split(' ')[0].split('-')[1];
+  const getRecentlyMonth = receipt.filter(
+    (item) => item.created_at.split(' ')[0].split('-')[1] === month
+  );
+
+  const sumAllCost = getRecentlyMonth
     .map((item) => item.cost)
     .reduce((acc, value) => {
       return acc + value;

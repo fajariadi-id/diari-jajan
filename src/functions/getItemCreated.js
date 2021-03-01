@@ -1,5 +1,3 @@
-import { months } from '../constant';
-
 const getItemCreated = () => {
   const time = new Date();
   const year = time.getFullYear();

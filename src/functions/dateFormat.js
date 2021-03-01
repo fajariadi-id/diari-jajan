@@ -6,7 +6,7 @@ const dateFormat = (date) => {
   const getMonth =
     getNumberOfMonth[0] === '0'
       ? months[getNumberOfMonth.slice(-1) - 1] // "02" -> "2" -> 2 - 1
-      : months[getNumberOfMonth];
+      : months[getNumberOfMonth - 1];
 
   // "2021-02-26" -> ["2021, "02", "26"] -> "26"
   const getDate = date.split('-')[2];

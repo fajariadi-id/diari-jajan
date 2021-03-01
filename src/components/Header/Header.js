@@ -3,8 +3,9 @@ import Button from '../Button/Button';
 import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { costFormat } from '../../constant';
-import { getAllCost } from '../../functions';
+import { getAllCost, headerDateFormat } from '../../functions';
 import { openModal } from '../../actions';
+import { months } from '../../constant';
 
 const Header = () => {
   // connect to receiptReducer
@@ -13,7 +14,7 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <h1>Diari Jajan Februari 2021</h1>
+      <h1>Diari Jajan {headerDateFormat(months)}</h1>
       <p>Pengeluaran Bulan Ini {costFormat.format(getAllCost(receipt))}</p>
 
       <Button
