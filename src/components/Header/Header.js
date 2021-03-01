@@ -7,6 +7,7 @@ import { getAllCost } from '../../functions';
 import { openModal } from '../../actions';
 
 const Header = () => {
+  // connect to receiptReducer
   const receipt = useSelector((state) => state.receipt);
   const dispatch = useDispatch();
 
