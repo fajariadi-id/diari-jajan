@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import { timeFormat, dateFormat } from '../../../functions';
 
 const Receipt = ({ date }) => {
+  // connect with receiptReducer state
   const receipt = useSelector((state) => state.receipt);
 
   const foods = receipt.filter(

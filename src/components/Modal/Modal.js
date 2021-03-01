@@ -15,7 +15,7 @@ const Modal = () => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
 
-  const receipt = useSelector((state) => state.receipt);
+  // connect with modalReducer
   const modal = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 

@@ -1,6 +1,4 @@
-export const getItems = (data) => {
-  return { type: 'fetch_items', payload: data };
-};
+export const getItems = (data) => ({ type: 'fetch_items', payload: data });
 
 export const addItems = (name, cost, created_at) => async (dispatch) => {
   const res = await fetch('http://localhost:5000/items', {
@@ -16,10 +14,6 @@ export const addItems = (name, cost, created_at) => async (dispatch) => {
   dispatch({ type: 'add_items', payload: data });
 };
 
-export const openModal = () => {
-  return { type: 'open_modal' };
-};
+export const openModal = () => ({ type: 'open_modal' });
 
-export const closeModal = () => {
-  return { type: 'close_modal' };
-};
+export const closeModal = () => ({ type: 'close_modal' });
