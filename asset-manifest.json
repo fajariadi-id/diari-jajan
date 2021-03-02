@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/diari-jajan/static/css/main.94c36009.chunk.css",
+    "main.js": "/diari-jajan/static/js/main.1b48ab28.chunk.js",
+    "main.js.map": "/diari-jajan/static/js/main.1b48ab28.chunk.js.map",
+    "runtime-main.js": "/diari-jajan/static/js/runtime-main.795f9102.js",
+    "runtime-main.js.map": "/diari-jajan/static/js/runtime-main.795f9102.js.map",
+    "static/js/2.31264334.chunk.js": "/diari-jajan/static/js/2.31264334.chunk.js",
+    "static/js/2.31264334.chunk.js.map": "/diari-jajan/static/js/2.31264334.chunk.js.map",
+    "index.html": "/diari-jajan/index.html",
+    "static/css/main.94c36009.chunk.css.map": "/diari-jajan/static/css/main.94c36009.chunk.css.map",
+    "static/js/2.31264334.chunk.js.LICENSE.txt": "/diari-jajan/static/js/2.31264334.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.795f9102.js",
+    "static/js/2.31264334.chunk.js",
+    "static/css/main.94c36009.chunk.css",
+    "static/js/main.1b48ab28.chunk.js"
+  ]
+}
