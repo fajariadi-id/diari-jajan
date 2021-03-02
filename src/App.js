@@ -7,12 +7,10 @@ import Modal from './components/Modal/Modal';
 import Receipts from './components/Receipts/Receipts';
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    setLoading(true);
-
     const fetchItems = async () => {
       const res = await fetch(
         'https://db-kompas-json-server.herokuapp.com/items'
@@ -20,11 +18,10 @@ const App = () => {
       const data = await res.json();
 
       dispatch(getItems(data));
+      setLoading(false);
     };
 
     fetchItems();
-
-    setLoading(false);
   }, [dispatch]);
 
   console.log(loading);
@@ -33,6 +30,7 @@ const App = () => {
     <>
       <Header />
       <Modal />
+      {loading && <h1 style={{ textAlign: 'center' }}>Loading...</h1>}
       <Receipts />
       <Footer />
     </>
