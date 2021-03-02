@@ -11,6 +11,10 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   visibility: ${({ modal }) => (modal ? 'visible' : 'hidden')};
+
+  @media (max-width: 720px) {
+    padding: 0 20px;
+  }
 `;
 
 export const ModalContainer = styled.form`

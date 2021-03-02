@@ -53,6 +53,10 @@ const HeaderContainer = styled.header`
     margin-bottom: 2rem;
     font-size: 24px;
   }
+
+  @media (max-width: 720px) {
+    padding: 0 20px;
+  }
 `;
 
 const Pesan = styled.span`

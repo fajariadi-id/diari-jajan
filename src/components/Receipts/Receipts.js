@@ -16,7 +16,7 @@ const Receipts = () => {
   );
 };
 
-const ReceiptContainer = styled.div`
+const ReceiptContainer = styled.main`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

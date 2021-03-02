@@ -24,8 +24,6 @@ const App = () => {
     fetchItems();
   }, [dispatch]);
 
-  console.log(loading);
-
   return (
     <>
       <Header />
