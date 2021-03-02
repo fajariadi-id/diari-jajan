@@ -1,6 +1,10 @@
-## Getting Started with Create React App
-
 # Diari Jajan
+
+Live website: [https://fajariadi-id.github.io/diari-jajan/](https://fajariadi-id.github.io/diari-jajan/)
+
+Live json-server: [https://db-kompas-json-server.herokuapp.com/items](https://db-kompas-json-server.herokuapp.com/items)
+
+## Getting Started with Create React App
 
 Sebuah web app yang memungkinkan kita untuk mencatat setiap pengeluaran jajan.
 
