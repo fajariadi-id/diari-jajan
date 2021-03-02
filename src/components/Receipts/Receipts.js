@@ -19,7 +19,6 @@ const Receipts = () => {
 const ReceiptContainer = styled.main`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
 `;
 

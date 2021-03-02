@@ -57,6 +57,9 @@ export const ModalInput = styled.input`
 
 export const BtnContainer = styled.div`
   display: flex;
-  gap: 10px;
   justify-content: flex-end;
+
+  & > button:first-child {
+    margin-right: 10px;
+  }
 `;
