@@ -1,7 +1,7 @@
 export const getItems = (data) => ({ type: 'fetch_items', payload: data });
 
 export const addItems = (name, cost, created_at) => async (dispatch) => {
-  const res = await fetch('http://localhost:5000/items', {
+  const res = await fetch('https://db-kompas-json-server.herokuapp.com/items', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

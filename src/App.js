@@ -11,7 +11,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const res = await fetch('http://localhost:5000/items');
+      const res = await fetch(
+        'https://db-kompas-json-server.herokuapp.com/items'
+      );
       const data = await res.json();
 
       dispatch(getItems(data));
